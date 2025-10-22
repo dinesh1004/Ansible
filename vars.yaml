@@ -1,0 +1,11 @@
+- name : variables
+  hosts : native
+  connection : local
+  vars :
+    course : DevSecops
+    duration : 4months
+    trainer : sivakumar reddy
+  tasks :
+  -   name :
+      ansible.builtin.debug:
+        msg : " courese is : {{course}}, duration: {{duration}}, trainer : {{trainer}}"
