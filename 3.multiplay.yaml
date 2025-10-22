@@ -1,5 +1,5 @@
 - name : play-1
-  hosts : local
+  hosts : native
   connection : local
   tasks :
   - name : from play-1 and task-1
@@ -9,7 +9,7 @@
     ansible.builtin.debug:
       msg : "from play-1 and task2"
 - name : play-2
-  hosts : local
+  hosts : naative
   connection : local
   tasks :
   - name : from play-2 and task-1
