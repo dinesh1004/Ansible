@@ -9,7 +9,7 @@
     ansible.builtin.debug:
       msg : "from play-1 and task2"
 - name : play-2
-  hosts : naative
+  hosts : native
   connection : local
   tasks :
   - name : from play-2 and task-1
