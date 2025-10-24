@@ -42,3 +42,9 @@
     ansible.builtin.debug:
       msg : "list  is :{{list | items2dict}}"
   
+# read yaml in take it into vatiable
+
+  - name : read yaml and take it into variable
+    ansible.builtin.set_fact:
+      student_yaml: "{{ lookup ('file' , 'student.yaml') | from_yaml }}"
+  
