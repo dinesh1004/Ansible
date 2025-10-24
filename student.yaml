@@ -2,7 +2,6 @@
   dob: "01-04-2000"
   hosts : native
   connection : local 
-  
   age: 25
   addresses:
     # Object
