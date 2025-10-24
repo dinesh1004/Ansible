@@ -1,0 +1,12 @@
+- name : error handling 
+  hosts : native
+  connection : local 
+  become : yes
+  tasks:
+  - name : checking roboshop user
+    ansible.builtin.command: id roboshop
+    register : user_output
+  - name : creating roboshop user 
+    ansible.builtin.command: useradd roboshop
+    when : user_outpu.rc != 0
+  
