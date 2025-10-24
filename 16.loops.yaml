@@ -4,7 +4,7 @@
   tasks:
   - name : installing softwares using loops 
     ansible.buitin. package:
-      name : {{ item }}
+      name : "{{ item }}"
       state : latest
     loop :
     - nginx
