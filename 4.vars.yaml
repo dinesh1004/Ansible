@@ -7,5 +7,5 @@
     trainer : sivakumar reddy
   tasks :
   - name :
-      ansible.builtin.debug:
-        msg : " courese is : {{course}}, duration: {{duration}}, trainer : {{trainer}}"
+    ansible.builtin.debug:
+      msg : " courese is : {{course}}, duration: {{duration}}, trainer : {{trainer}}"
