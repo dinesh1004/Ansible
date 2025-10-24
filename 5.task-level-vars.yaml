@@ -1,0 +1,13 @@
+- name : trask level variables
+  hosts : native
+  connection : local
+  vars :
+    course : DevSecops
+    duration : 4months
+    trainer : sivakumar reddy
+  tasks :
+  - name : task level variables
+    vars :
+      course : ansible
+    ansible.builtin.debug:
+      msg : "course details : course :{{course}}, duration: {{duration}}, trainer : {{trainer}}"
