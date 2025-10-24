@@ -1,6 +1,7 @@
 - name : installing nginx based os family
   hosts : native
   connection : local
+  become : yes
   tasks :
   - name : installing nginx
     ansible.builtin.dnf:
