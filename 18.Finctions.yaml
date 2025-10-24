@@ -3,11 +3,32 @@
   connection: local
   vars:
     skills: Devops,Linux,Shell-scripting,Ansible,terraform
+    list : [ "Devops","Linux","Shell-scripting","terraform" ]
+   #Dictionary == map 
+    tags : 
+      application : payment
+      environment : Dev
+    
     # name : Dinesh Velpula
+
+  # using default function
+
   tasks : 
   - name : default function
     ansible.builtin.debug:
       msg : "name is :{{name | default ('Ramesh')}}"  
+
+  # converting the string in to list using split function
+
   - name : split function
     ansible.builtin.debug:
       msg : " skills are :{{skills | split(',')}}"  
+
+  # convert map to list
+  - name : converting dictionary to list 
+    ansible.builtin.debug:
+      msg : "tags are :{{tags | dict2items}}"
+
+
+  
+  
