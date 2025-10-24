@@ -6,6 +6,7 @@
     prompt : what is your number?
     private : false
   tasks:
-  ansible.builtin.debug:
-    msg : "the number {{number }} is less than 10"
-  when : number < 10
+  - name : checking condition 
+    ansible.builtin.debug:
+      msg : "the number {{number }} is less than 10"
+    when : number < 10
