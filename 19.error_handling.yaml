@@ -9,7 +9,7 @@
     ignore_errors: true
 
   - name : printing output
-    ansible.builtin.debus:
+    ansible.builtin.debug:
       msg : "{{user_output}}"
 
 
