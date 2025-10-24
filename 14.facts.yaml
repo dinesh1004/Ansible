@@ -4,5 +4,6 @@
   tasks :
   - name : installing nginx
     ansible.builtin.dnf:
-      msg :"installing nginx"
+      name : nginx
+      state : latest 
     when : ansible_os_family="RedHat"
