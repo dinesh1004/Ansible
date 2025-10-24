@@ -1,7 +1,7 @@
 - name : variables from var file
   hosts : native
   connection : local
-  var_files:
+  vars_files:
   - course.yaml
   tasks:
   - name : printing varfile variables
