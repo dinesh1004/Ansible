@@ -23,6 +23,7 @@
 
 - name: "ramesh"
   hosts : native
+  connection : local 
   vars: 
     dob: "01-01-01"
     age: 21
