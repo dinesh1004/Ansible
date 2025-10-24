@@ -1,0 +1,9 @@
+course: DevSecops
+duration : 4months
+trainer : "Sivakumar reddy"
+skills :
+  - linux
+  - shell scriptinh
+  - ansible 
+  - terraform
+
