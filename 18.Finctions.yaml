@@ -4,11 +4,12 @@
   vars:
     skills: Devops,Linux,Shell-scripting,Ansible,terraform
     list :
-    - Devops
-    - Linux
-    - shell-scripting
-    - Ansible
-    - Terraform
+    - key : course1
+      value : Devops
+    - key : course2
+      value : Linux
+    - key : course 3
+      value : shell-scripting
     
    #Dictionary == map 
     tags : 
