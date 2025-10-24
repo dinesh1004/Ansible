@@ -3,6 +3,7 @@
   connection: local
   vars:
     skills: Devops,Linux,Shell-scripting,Ansible,terraform
+    name : Dinesh Velpula
   tasks : 
   - name : default function
     ansible.builtin.debug:
