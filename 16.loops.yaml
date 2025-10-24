@@ -3,7 +3,7 @@
   connection : local
   tasks:
   - name : installing softwares using loops 
-    ansible.buitin. package:
+    ansible.builtin. package:
       name : "{{ item }}"
       state : latest
     loop :
