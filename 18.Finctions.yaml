@@ -2,7 +2,7 @@
   hosts : native
   connection: local
   vars:
-  skills: Devops,Linux,Shell-scripting,Ansible,terraform
+    skills: Devops,Linux,Shell-scripting,Ansible,terraform
   tasks : 
   - name : default function
     ansible.builtin.debug:
