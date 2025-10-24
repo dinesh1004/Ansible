@@ -8,4 +8,4 @@
   - name : listing skills
     ansible.builtin.debug:
       msg : "required skills are  : {{item}}"
-    loop : "{{skills}}"
+    loop : "{{skills}} | from_json"
