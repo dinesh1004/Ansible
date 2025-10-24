@@ -3,8 +3,11 @@
   connection: local
   vars:
     skills: Devops,Linux,Shell-scripting,Ansible,terraform
-    name : Dinesh Velpula
+    # name : Dinesh Velpula
   tasks : 
   - name : default function
     ansible.builtin.debug:
-      msg : "name is :{{name | default ('Ramesh')}}"    
+      msg : "name is :{{name | default ('Ramesh')}}"  
+  - name : split function
+    ansible.builtin.debug:
+      msg : " skills are :{{skills | split(',')}}"  
