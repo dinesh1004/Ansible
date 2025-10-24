@@ -8,7 +8,7 @@
   - name : listing skills
     ansible.builtin.debug:
       msg : "required skills are  : {{item}}"
-    loop : "{{ skills | from_json }}"
+    loop : "{{ skills }}"
 
 # - name : vars from inventory
 #   hosts : native
