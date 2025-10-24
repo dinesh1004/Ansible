@@ -8,4 +8,4 @@
   tasks:
   ansible.builtin.debug:
     msg : "the number {{number }} is less than 10"
-  when : {{ number }} < 10
+  when : number < 10
