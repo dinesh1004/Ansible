@@ -1,8 +1,9 @@
--   name : functions
-    hosts : native
-    connection: local
-    skills: Devops,Linux,Shell-scripting,Ansible,terraform
-    tasks : 
-    - name : default function
-      ansible.builtin.debug:
-        msg : "name is :{{name | default ('Ramesh')}}"    
+- name : functions
+  hosts : native
+  connection: local
+  vars:
+  skills: Devops,Linux,Shell-scripting,Ansible,terraform
+  tasks : 
+  - name : default function
+    ansible.builtin.debug:
+      msg : "name is :{{name | default ('Ramesh')}}"    
