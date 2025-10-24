@@ -1,6 +1,7 @@
 - name : softeares
   hosts : native
   connection : local
+  become : yes
   tasks:
   - name : installing softwares using loops 
     ansible.builtin.package:
