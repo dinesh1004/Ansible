@@ -3,7 +3,13 @@
   connection: local
   vars:
     skills: Devops,Linux,Shell-scripting,Ansible,terraform
-    list : [ "Devops","Linux","Shell-scripting","terraform" ]
+    list :
+    - Devops
+    - Linux
+    - shell-scripting
+    - Ansible
+    - Terraform
+    
    #Dictionary == map 
     tags : 
       application : payment
