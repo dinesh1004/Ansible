@@ -22,6 +22,7 @@
     - cloud
 
 - name: "ramesh"
+  hosts : native
   vars: 
     dob: "01-01-01"
     age: 21
