@@ -6,6 +6,6 @@
     duration : 4months
     trainer : sivakumar reddy
   tasks :
-  - name :
+  - name : printing variables 
     ansible.builtin.debug:
       msg : " courese is : {{course}}, duration: {{duration}}, trainer : {{trainer}}"
