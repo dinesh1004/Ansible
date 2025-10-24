@@ -55,6 +55,7 @@
 # copyin to another file 
   - name : copying to new file 
     ansible.builtin.copy:
-      content : "{{student_yaml | to_noce_jason}}
       dest : ./student_data.jason
+      content : "{{ student_yaml | to_noce_jason }}
+      
     
