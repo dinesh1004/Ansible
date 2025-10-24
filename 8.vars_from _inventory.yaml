@@ -4,8 +4,8 @@
   tasks:
   - name : variable fro inventory
     ansible.builtin.debug:
-      msg : "course: {{course}}, trainer:{{trainer}}, duration:{{duration}}, skills :{{skills}}"
-  # - name : listing skills
-  #   ansible.builtin.debug:
-  #     msg : "required skills are  : {{item}}"
-  #   loop : "{{skills}}"
+      msg : "course: {{course}}, trainer:{{trainer}}, duration:{{duration}}"
+  - name : listing skills
+    ansible.builtin.debug:
+      msg : "required skills are  : {{item}}"
+    loop : "{{skills}}"
