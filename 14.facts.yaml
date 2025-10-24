@@ -10,7 +10,7 @@
     
     when : ansible_os_family=="RedHat"
   - name : starting nginx
-    ansible.biultin.service:
+    ansible.builtin.service:
       name : nginx
       state : started
       enabled : yes
