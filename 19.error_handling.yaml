@@ -10,7 +10,7 @@
 
   - name : printing output
     ansible.builtin.debus:
-      msg :"{{user_output}}"
+      msg : "{{user_output}}"
 
 
   - name : creating roboshop user 
