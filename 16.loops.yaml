@@ -3,11 +3,24 @@
   connection : local
   tasks:
   - name : installing softwares using loops 
-    ansible.builtin. package:
+    ansible.builtin.package:
       name : "{{ item }}"
       state : latest
     loop :
     - nginx
     - python3
-    - mysql
+    - zip
   
+  # - name: Install pacakges
+  # hosts: local
+  # connection: local
+  # become: yes
+  # tasks:
+  # - name: print names
+  #   ansible.builtin.package:
+  #     name: "{{ item }}"
+  #     state: latest
+  #   loop:
+  #   - nginx
+  #   - mysql
+  #   - zip
