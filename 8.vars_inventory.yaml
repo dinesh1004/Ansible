@@ -1,11 +1,24 @@
+# - name : vars from inventory
+#   hosts : native
+#   connection : local
+#   tasks:
+#   - name : variable fro inventory
+#     ansible.builtin.debug:
+#       msg : "course: {{course}}, trainer:{{trainer}}, duration:{{duration}}"
+#   - name : listing skills
+#     ansible.builtin.debug:
+#       msg : "required skills are  : {{item}}"
+#     loop : "{{skills}} | from_json"
 - name : vars from inventory
   hosts : native
   connection : local
   tasks:
-  - name : variable fro inventory
-    ansible.builtin.debug:
-      msg : "course: {{course}}, trainer:{{trainer}}, duration:{{duration}}"
-  - name : listing skills
-    ansible.builtin.debug:
-      msg : "required skills are  : {{item}}"
-    loop : "{{skills}} | from_json"
+    - name : variable fro inventory
+      ansible.builtin.debug:
+        msg : "course: {{course}}, trainer:{{trainer}}, duration:{{duration}}"
+      
+    - name : listing skills
+      ansible.builtin.debug:
+        msg : "required skills are : {{item}}"
+      # This filter should now work:
+      loop : "{{ skills | from_json }}"
