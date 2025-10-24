@@ -1,0 +1,8 @@
+- name : installing nginx based os family
+  hosts : native
+  connection : local
+  tasks :
+  - name : installing nginx
+    ansible.builtin.dnf:
+      msg :"installing nginx"
+    when : ansible_os_family="RedHat"
