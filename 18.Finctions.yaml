@@ -18,6 +18,7 @@
     
     name : Dinesh Velpula
     email : VELPULADINESH888@GMAIL.COM
+    ipaddress : 192.132.60.50
 
   # using default function
 
@@ -59,13 +60,23 @@
       dest : ./student_data.jason
       content : "{{ student_yaml | to_nice_json }}"
 
+# convert to uppercase
+
   - name: convert uppercase
     ansible.builtin.debug:
       msg: "{{ name | upper }}"
+
+# convert to lowercase
   
   - name: convert lovercase 
     ansible.builtin.debug:
       msg: "{{ email | lower }}"
+    
+# check for IP address validation
+
+  - name: check IP is valid or not
+    ansible.builtin.debug: 
+      msg: "{{ ipaddress | ansible.utils.ipv4 }}"
 
       
     
