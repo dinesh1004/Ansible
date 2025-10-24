@@ -52,3 +52,9 @@
   - name : converting to json
     ansible.builtin.debug:
       msg : "{{student_yaml | to_json}}"
+# copyin to another file 
+  - name : copying to new file 
+    ansible.builtin.copy:
+      content : "{{student_yaml | to_noce_jason}}
+      dest : ./student_data.jason
+    
