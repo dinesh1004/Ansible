@@ -8,6 +8,11 @@
     register : user_output
     ignore_errors: true
 
+  - name : printing output
+    ansible.builtin.debus:
+      msg :"{{user_output}}"
+
+
   - name : creating roboshop user 
     ansible.builtin.command: useradd roboshop
     when : user_output.rc != 0
