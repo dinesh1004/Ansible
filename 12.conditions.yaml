@@ -1,0 +1,11 @@
+- name : conditions
+  hosts : native
+  connection : local
+  vars_prompt:
+    name : number
+    prompt : what is your number?
+    private : false
+  tasks:
+  ansible.builtin.debug:
+    msg : "the number {{number }} is less than 10"
+  when : {{ number }} < 10
