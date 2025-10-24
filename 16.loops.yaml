@@ -1,0 +1,13 @@
+- name : softeares
+  hosts : native
+  connection : local
+  tasks:
+  - name : installing softwares using loops 
+    ansible.buitin. package:
+      name : {{item}}
+      state : latest
+    loop :
+    - nginx
+    - python3
+    - mysql
+  
