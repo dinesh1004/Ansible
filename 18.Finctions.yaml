@@ -16,7 +16,8 @@
       application : payment
       environment : Dev
     
-    # name : Dinesh Velpula
+    name : Dinesh Velpula
+    email : VELPULADINESH888@GMAIL.COM
 
   # using default function
 
@@ -57,6 +58,14 @@
     ansible.builtin.copy:
       dest : ./student_data.jason
       content : "{{ student_yaml | to_nice_json }}"
- 
+
+  - name: convert uppercase
+    ansible.builtin.debug:
+      msg: "{{ name | upper }}"
+  
+  - name: convert lovercase 
+    ansible.builtin.debug:
+      msg: "{{ email | lower }}"
+
       
     
