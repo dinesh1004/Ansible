@@ -1,23 +1,25 @@
 - name: "Dinesh velpula"
   hosts : native
   connection : local 
-  addresses:
+  vars:
+
+    addresses:
     # Object
-  - doorNo: 4-32
-    street: "gandhi nagar"
-    city: hyderabd
-    pin: 534565
-    type: current
-  
-  - doorNo: 4-32
-    street: "gandhi nagar"
-    city: hyderabd
-    pin: 534565
-    type: perm
-  skills:
-  - java
-  - devops
-  - cloud
+    - doorNo: 4-32
+      street: "gandhi nagar"
+      city: hyderabd
+      pin: 534565
+      type: current
+    
+    - doorNo: 4-32
+      street: "gandhi nagar"
+      city: hyderabd
+      pin: 534565
+      type: perm
+    skills:
+    - java
+    - devops
+    - cloud
 
 - name: "ramesh"
   dob: "01-01-01"
